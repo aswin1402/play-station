@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation® Official Site: Consoles, Games, Accessories &amp; More</title>
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2 class="sony">SONY</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img height="60px" src="data:image/png;base64,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" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      game
+                    </a>
+                    <div class="dropdown-menu">
+                        <div id="flex">
+                        <div class="card">
+                           <img src="data:image/jpeg;base64,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" alt="">
+                       </div>
+                       <div class="card">
+                        <img src="https://e7.pngegg.com/pngimages/285/176/png-clipart-sony-playstation-4-slim-fifa-18-video-game-consoles-playstation4-backgraound-electronics-gadget.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9b4qmjJPumyJ0HLaOlnnuVZ_ryr1vFPTqmQ&s" alt="">
+                    </div>
+                      
+                       <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvjx4g7QibehTCimRYDEIyCRfl34b2Gen_dCEpASGvExfh059J5XEOdqvjRoKrYdt8xM&usqp=CAU" alt="">
+                    </div>
+                    <div class="card">
+                        <img height="80px" src="https://media.licdn.com/dms/image/C4D12AQED1TjCts4Zaw/article-cover_image-shrink_600_2000/0/1520137123015?e=2147483647&v=beta&t=5AkXP2TAHgBrrqbdTpYdgf4pg93kCUhssdf-tbTRKxU" alt="">
+                    </div>
+                       </div>
+                       </div> 
+                       
+                       
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ps5
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYGNIVC1HGWv3gCCgDX9QvM33g63MUUyYJA3_XNTlCWvR1rd5O9Yd7lbxd07C0Uz8o2Ic&usqp=CAU" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmneUvR-9KLJzLK25sg_uxNx9hDM0d-xrwQ&s" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9b4qmjJPumyJ0HLaOlnnuVZ_ryr1vFPTqmQ&s" alt="">
+                        </div>
+                        <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvjx4g7QibehTCimRYDEIyCRfl34b2Gen_dCEpASGvExfh059J5XEOdqvjRoKrYdt8xM&usqp=CAU" alt="">
+                        
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtxNVuBS1CkShlYy__n6tjtVNmte3ig79lg&s" alt="">
+                        </div>
+                    
+                      </div>
+                      </div>
+                      
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ps4
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYGNIVC1HGWv3gCCgDX9QvM33g63MUUyYJA3_XNTlCWvR1rd5O9Yd7lbxd07C0Uz8o2Ic&usqp=CAU" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmneUvR-9KLJzLK25sg_uxNx9hDM0d-xrwQ&s" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9b4qmjJPumyJ0HLaOlnnuVZ_ryr1vFPTqmQ&s" alt="">
+                        </div>
+                       
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEDlOZq1z2e2u38GxEmyxigimHW13gU3bzA&s" alt="">
+                        </div>
+                       
+                   
+                      </div>
+                      </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  service
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img height="80px" src="https://media.licdn.com/dms/image/C4D12AQED1TjCts4Zaw/article-cover_image-shrink_600_2000/0/1520137123015?e=2147483647&v=beta&t=5AkXP2TAHgBrrqbdTpYdgf4pg93kCUhssdf-tbTRKxU" alt="">
+                        </div>
+                        <div class="card">
+                            <img height="80px" src="https://www.thesun.co.uk/wp-content/uploads/2022/10/ps-stars.png?strip=all&w=620&h=413&crop=1" alt="">
+                        </div>
+                    
+                      </div>
+                      </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    accessories
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmneUvR-9KLJzLK25sg_uxNx9hDM0d-xrwQ&s" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnZbKIsLJiN0fGTTlvl6RhgjH7PybladBaQ&s" alt="">
+                        </div>
+                        <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvjx4g7QibehTCimRYDEIyCRfl34b2Gen_dCEpASGvExfh059J5XEOdqvjRoKrYdt8xM&usqp=CAU" alt="">
+                        
+                        </div>
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtxNVuBS1CkShlYy__n6tjtVNmte3ig79lg&s" alt="">
+                        </div>
+                      </div>
+                      </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  news
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img height="80px" src="https://media.licdn.com/dms/image/C4D12AQED1TjCts4Zaw/article-cover_image-shrink_600_2000/0/1520137123015?e=2147483647&v=beta&t=5AkXP2TAHgBrrqbdTpYdgf4pg93kCUhssdf-tbTRKxU" alt="">
+                        </div>
+                        <div class="card">
+                            <img height="80px" src="https://www.thesun.co.uk/wp-content/uploads/2022/10/ps-stars.png?strip=all&w=620&h=413&crop=1" alt="">
+                        </div>
+                    
+                      </div>
+                      </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    store
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img width="150px" height="100px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATDxUQEBIQDxUQDxAVEBASEBIPEA8QFRIYFxYVFRYYHSggGBsmGxMTITEhJykrLy4uFx8zOD8tNyotLysBCgoKDg0OGxAQGy0lHyUrLi0tKy0tLSstLSstKy0tLS8tLS0tLi0tMC0tKy4tKystLS0tLS4rKy03LS0tKystMf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwIDBAUGAQj/xABKEAACAQMABAcMBgYKAwEAAAAAAQIDBBEFEiExBgcTQVFhcRciMlJTVIGRk6HS0yNykpSxwRRCYoKy8AgYMzVzdLPR4fE0Y6Mk/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECAwQFBv/EACIRAQEAAgIDAAIDAQAAAAAAAAABAhEDIQQSMQVREyJBMv/aAAwDAQACEQMRAD8AnEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANNpLhXo+hJwrXVCElvhrqc12xjlos8LdGVbqkqFO5qWi5ROtKnHM6tLVeaSllaqbcW31Y52crYcV+jKe2cKty1z1qstX7ENWPuNSJt3GhdO2t3Fyta0Kyg0paucxbzjKaytz9RsG0ll7Mb2c7o+woW8dS2pUrdPGY0qcaaljL26uM73v6SFuMpVKV9Upyr3FWlUjCpCnVr1a0YxmtqSnJ7FJSx1YQ9TaTeF3Gla2suRtkr2qvC1KmrQpfWqJPL/ZWevByz46LnzOh7efwEWrCexY2egORL0JRfHVc+Z0Pbz+ApfHZc+Z0Pbz+Ai1yKGyKlN8d1z5lQ9vP4Dx8eFz5lQ+8T+AipspLJsSq+PK58yofeJ/AU93S58xofeJ/ARfCnkyqNm3uWT18Xh58nxm1Ivd2ufMaP3ifwHj497jzGj94n8BwkdHdLX4/gey0culepnrn4jk/Z7O5fHzceY0fvE/gKe73ceY0fvE/gI/raNfRnrW011e2aOHJ+O5MD2Sh3fa/mNH7xP4Tx8f1fzGl94l8JEdWGCzVoyUVJxkoz1tSTTUZarw9V7ng8WWFx+tJh/rAV/MaXt5fCP6wFfzGl7eXwkR3ejK9JwjVpVKbqxTpxlBqU03hYW97SzO2qLGtCccvCcouKz0bTAmL+sBX8xpe3l8JsNBcfUZ1lC6tOShLfUpVHVlDrcHFZXY89pB95Z1KUlGpFwbipJPfqvcxYJcrHPjFH2dovSlvcU1Vt6tOtB7pQkpY6nzp9T2mVVqKMXKTUVFNyb2JJLLbPk6jUlT7+nKVJ7tenNwnu8ZPJ9CcHraVKzpUatSrXbpR5Z1qk67nOcMyTc2+93rV3YNeqbZdHh7oqTwryh2tuMPtNY950FvXhOKnTlGpGW6UJKUWuprYzhNIcA9F1t9rTpt/rUG7eX/zaT9R5wX4FqxuFVtbu5VNzzWtqjjUhVhqSWrlYw8uL1mm+9xubJcTaQAeReVnpPTKgAAAAAAAABbryxF9n47AMOpLn6Wa6tOTm4qUoqMabxFQy9aUk23JPcolekWu9zjVy85zqZ1Xq63Vn34NZVknP6JTXevOqtXn5s83Tj0bd3WMs+hJyjtecSmtZbG9WbjnZz7CLeOawXK29XHhUp028+JJSX8ciQqbpcnjZnVe9PX1sPHJvpzjGPxOa42aGto+E34VOvT9OtGUWvXj1GsZu6S1C7fftLmX5nrZab75lWTjfrUGylsNlGQr0u0qeS3BGzsKGXt3b2fS8Lxv5MmcqvWdnubW/cudm3VvCEdaq1FLmzhLq632FUXGlTdSW/Gxdu5Lt/A5y+upzlrS59y/VS6Efb5eXDx8fXGdpJ+25raYpQxqwbytjwoprONj2vmZbWn4/rU3j6yl7mjn5dWevtGXjGz8zw3zeTf1duqo1aFXwHqy6PBl6tz9DMO+sOnG3dJbpdpoYzOl0Xe8onSqbZY2PY9ZL817z6HjeVOX+ucLJXL3lph7jXV9ZpRbk1HOqm21FN5eFzbTrtJWu9PfH3x5n+Bzl1Swzy/kPDkntGJf8YE69RtNzm3BYg3OTcEuaL5impXnLGtOcsNtKUnJJt5bWSucS20fncsdV0LivOb1pylN4SzKTk8LYlliy/tY/WRS0V2X9rH6yMK7LRlu6txSob1VrUoNYXgymk/c2fRLp7c7fyIV4vrVT0pQb3U1Um+2NN498l6iWefbnXz+zrZxzc+M7ubHUdrNSMSrkvC2pZy8rL1pZe9bOzG3Zjm2mxoSezPQs9paMCo4az1/C1u96cZ2Y592N3o25Mq6m1lmPY8F4wNFzeMPe4xb7Vv/ABM8536sAARQAAAAAMe9l3qXSzIMK/e1Lqf5Fn0YdWRgVW1NySk9aMF3urlaspPD1ubvjKrMxpSOjK3y0adOUptQSdScm3sjFycnl+kh3htwwley5OEdShTlmCfhVJYaU5cy2N4XWSHw5jN6PuNTOVQm/QtsvcmQlKae7bjm7dz9R0nWO/30ze6xa8NuShPYXbiokkufbnqzzGPF7DjW49bPDxsIYqv0VtOg0ZSzheNL3L/s0NvvOk0Vvj+968H6b8ZjNbc79WOENbM1Bboxzjrl/wAYNLg2em19NL93+BGvSPH5Vt5Ktva217jYaX0DdWslG5oVKLl4Lkk4S+rOLcW8NbE9mV0l/QlrZz1/0yvUoKMVycYU5S5WTzlOcYz1MbP1HnPMd9xg6XsLilOCu4y+mjXoxow5Wc6qtYUlGfMobJZzKLT5ng8mWWrJpIilxMy0SjqzTy9uFlLVkns1uosSR7F7dmxdH87z18Gcxy7LXS38VJRkt0lj0SWV+PuOUvoHVTX/AOen9Wlj7P8A0c1pLe+1n2fJu+DdMv8AppqiLLRk1EWWj8hy/W1poyNHWrctd7Ens62Wmja2FWKgup+/b+Zyg3Oi9K1qFWFam1r0nlZW9Yw1Jb8NNomnglwnp3tHlIrk5waVWlnOpLmafPF8zIGi8bdiS5+s7fimlJ3FxKOyCp08/Wc24+5M749yysXq7ShKqs5e/Ly8/SReXhR6t3/OXjJjU3Z37M9pia5XCe05tN3YT75dez3G2NDZz2p/tL8TfGMlgADKgAAAAAa/SD75fV/NmwNdpLwl9X82WfUrX1WY0mX6rMScjojl+MnTKt7CcVjXuVKlBdTXfy9EX70RxwQ4vr2/pSq0OShCEtVSrSlBTlzqGrF5xsz2m009CrpXTMbSg+9pydJS3xhCLzWqvseV14iucn3RGjaVtQp29COpTpQUYrn62+lt5bfO2y55akiSf6+YOG/A+vo2VKFedKbrwqSSpOUlFQaW1ySz4XQaCm9iJV/pHf8AkWf+Dcfx0yJqcu9Ry22uNhMobPMmojMoyN9o6vjD8WSfo/nBzEJmws7nD/ncfc/HeRMeqzY3mnqXg1Fua1W+vfH1r8DTG7triMo8nPamvd/uaq/s5U3t76L8GfM+p9D6jp5nH/b3nyrZvtayGy1F9eNj/DcI1cPK5ns5zxyftjS42XbWi5zUV+s8di536smPTi5NRinJvcktpvrenGjFylq68ltS3RXir82ejx+L3qyMjSFZLCW6Kz7ti9y9Zy15U2mbf3ec9L3/AOxpq1TJ6vO8iTD1i/btamy2ypspPzed3WlJXouMp3EKKaXLVoQTe6LnJRz7ykv8Hv7wt/8AOW/+rE5iS7niY0lGMpRna1NRNxUalRTqY5opwST7Wa7iv0hyF5K3qd6rjEduxxrQb1U+jfJduD6TIT45uCroVo6Tt1qxqTXL6uzk7jOYVV9bG39pLxjeGXfaZR2zEHtNXoHSqubWnXW+ce/Xi1FsmvtJmwpy2ls0jbW8th0hzFudOYyagADKgAAAAAa/Sq8F9q/n3mwMe+pa0Glv3rtRYOfrSOd4WaW/R7SrWXhKOrT66knqx97z2Jm7ryOA4Zwld3tro2Ge/lylXHNHak/sqp60dGXQ8SHB3krWV7UX0l1spt71Qi85/elt9ESTTDs6cadOFKCSjThGMUtySWDIUznbutIN/pI/29l/hXP8VMiWku9RLH9JJ/TWT/8AXc/xUyKLSvBKOdV4azFvGVncxB60U6rM2pe0G2+ThHLk0lVliOdyW3mMXlYeNH1o0ilRZdg2UqtDxo+tFSrw8aPrR1wz9aMyhctG1ttJPGHtT3p7U+1GgVxDxo+tFyN3Dxo/aR9Li83rVpOm9lStpbdVwz4ksL1PKKVaWy8pLqckl7kahX0fHj9pHrv4+PH7SOv8vBe+l23P6bCCxTjGC58b32vezXXF42YcryHjR+0i1K4h40fWiZ+ZjjNYpbsqzbLDTLvLQ8aPrR5y0PGj60fM5ea500suLPNRl7loeNH1o85WHjR9aPOLWqy7we/vC3/zlv8A6sTzlY+NH1oq4PbdI2+Nub23xjbn6WJmq+zDB05oyFzbVbaosxrU5RfU2tkl1p4foMtyKXMggrgDWnb3Fxo6tslCUpRX7UcRnjtWpJek7mnPac5xqWX6Lf0NJwWIymo18Lqalu6YuXrRu6U9uzb0M672y6HRu2cV0yXqztOoOf4OUG3yj3JYj1vn/nrOgMZLAAGVAAAAAAonHJWANBpPRVWUtaDg+lPMW/SaHQPAyrSv6t9WqRnKrFQpwUXijBJLCb3vvV0Hegu6MKFJl5QZfBBzXDDgjbaRoqlcwk9STlTnCWpUpyaw9V9fQ01sRwj4ibDyt97Sh8omAAQ93CrDyt97Sh8sdwqw8rfe0ofLJhAEPdwqx8rfe0ofLPO4VY+UvvaUPlkxACHe4VY+Uvva0PlnncKsfKXvtaHyyYwBDncKsvKXvtaHyx3CrLyl77Wh8smMAQ53CrLyl77Wh8s97hVj5S99rQ+WTEAId7hVj5S+9pQ+We9wqx8rfe0ofLJhAEPdwqx8rfe0ofLHcKsPK33tKHyyYQBD3cKsfK33tKHyzc8F+KSws7iNzFV606b1qfLThKNOa3SUYxjlrmznBJAAsqDLc6bMoAcxws4O/plrO2bUddbJNa2pJPKa9KNXoXgjcUqdOnUqQqcnCMXNJpzUVhPHM8Jc53YLsY1rQcYpdC5tiMlAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=" alt="">
+                        </div>
+                        <div class="card">
+                            <img width="150px" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmneUvR-9KLJzLK25sg_uxNx9hDM0d-xrwQ&s" alt="">
+                        </div>
+                        <div class="card">
+                            <img width="150px" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnZbKIsLJiN0fGTTlvl6RhgjH7PybladBaQ&s" alt="">
+                        </div>
+                        <div class="card">
+                        <img width="150px" height="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvjx4g7QibehTCimRYDEIyCRfl34b2Gen_dCEpASGvExfh059J5XEOdqvjRoKrYdt8xM&usqp=CAU" alt="">
+                        
+                        </div>
+                        <div class="card">
+                            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtxNVuBS1CkShlYy__n6tjtVNmte3ig79lg&s" alt="">
+                        </div>
+                      </div>
+                      </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  supports
+                </a>
+                <div class="dropdown-menu">
+                    <div id="flex">
+                        <div class="card">
+                            <img height="80px" src="https://media.licdn.com/dms/image/C4D12AQED1TjCts4Zaw/article-cover_image-shrink_600_2000/0/1520137123015?e=2147483647&v=beta&t=5AkXP2TAHgBrrqbdTpYdgf4pg93kCUhssdf-tbTRKxU" alt="">
+                        </div>
+                        <div class="card">
+                            <img height="80px" src="https://www.thesun.co.uk/wp-content/uploads/2022/10/ps-stars.png?strip=all&w=620&h=413&crop=1" alt="">
+                        </div>
+                    
+                      </div>
+                      </div>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button>sign in</button>
+              <img width="40px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2nG7Jb-dylY4ZRkHOKkCBWe1b4rLPfNL-rQZ4W8YGNA0vkuotQeY4sKVr70FKN62IlVI&usqp=CAU" alt="">
+              
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://gmedia.playstation.com/is/image/SIEPDC/NBA-2K25-launch-hero-desktop-01-en-26jun24?$2400px$" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="575px" src="https://gmedia.playstation.com/is/image/SIEPDC/Elden-Ring-Shadow-of-the-Erdtree-background-desktop-01-en-01mar24?$4000px$" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="575px" src="https://gmedia.playstation.com/is/image/SIEPDC/concord-hero-banner-desktop-01-en-25jan24?$2400px$" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img width="100%" height="575px" src="https://gmedia.playstation.com/is/image/SIEPDC/horizon-adventures-hero-desktop-01-en-17may24?$4000px$" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+       <div id="flex">
+        <div class="card">
+            <img height="90px" src="https://gmedia.playstation.com/is/image/SIEPDC/NBA-2K25-launch-keyart-01-en-26jun24?$1200px$" alt="">
+        </div>
+        <div class="card ">
+            <img height="90px"  src="https://gmedia.playstation.com/is/image/SIEPDC/concord-keyart-01-en-25jan24?$1200px$" alt="">
+        </div>
+        <div class="card">
+            <img height="90px"  src="https://gmedia.playstation.com/is/image/SIEPDC/shadow-of-the-erdtree-listing-thumb-01-28may25$en?$1200px$" alt="">
+        </div>
+        <div class="card">
+            <img height="90px"  src="https://gmedia.playstation.com/is/image/SIEPDC/18-great-games-you-mightve-missed-in-24-keyart-01-17jun24$en?$1200px$" alt="">
+        </div>
+        <div class="card">
+            <img height="90px"  src="https://gmedia.playstation.com/is/image/SIEPDC/horizon-adventures-keyart-01-en-17may24?$1200px$" alt="">
+        </div>
+        <div class="card">
+            <img height="90px"  src="https://gmedia.playstation.com/is/image/SIEPDC/astro-bot-keyart-01-en-23may24?$1200px$" alt="">
+        </div>
+        <div class="card">
+            <img height="90px"  src="https://gmedia.playstation.com/is/image/SIEPDC/apple-tv-keyart-01-en-21jun24?$1200px$" alt="">
+        </div>
+       </div>
+    <section>
+        <div id="flex">
+            <div class="para">
+            <h5>Introducing the PS5 console and accessories</h5><br><br>
+            <h6>PlayStation 5 Console</h6><br>
+            <p>Experience an all-new generation of incredible PlayStation games.</p>
+            <button1><b>find out more</b></button1>
+                <button2><b>buy now</b></button2><br><br>
+                    <p>Buy from $449,99</p>
+            </div>
+            <img width="50%" src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-disc-console-featured-hardware-image-block-02-en-15nov23?$1600px$" alt="">
+        </div>
+    </section>
+<div id="flex1"> 
+    
+    <div class="card1">
+    <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-range-stacked-image-block-01-en-11feb22?$1200px$" alt="">
+    </div>
+
+    <div class="card1">
+        <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-01-en-08sep23?$1200px$" alt="">
+        </div>
+
+        <div class="card1">
+            <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Explore-earbuds-image-block-01-en-08sep23?$1200px$" alt="">
+            </div>
+
+            <div class="card1">
+                <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-featured-hardware-image-block-01-en-11aug23?$1200px$" alt="">
+                </div>
+
+                <div class="card1">
+                    <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/access-controller-featured-hardware-image-block-01-en-12oct23?$1200px$" alt="">
+                    </div>
+
+                    
+                    <div class="card1">
+                        <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-console-cover-range-image-block-01-en-16feb22?$1200px$" alt="">
+                        </div>
+
+                        <div class="card1">
+                            <img height="100px" src="https://gmedia.playstation.com/is/image/SIEPDC/hd-camera-featured-hardware-image-block-01-en-11aug23?$1200px$" alt="">
+                            </div>
+                            </div>
+
+                            <section id="back">
+                                
+                                <div class="back1">
+                                <p>Great PS4 & PS5 games out now or coming soon</p>
+                                </div>
+                                <div class="space ">
+                                    <div class="tab-container ">
+                                        <input type="radio" name="tab" id="tab1" class="tab tab--1" />
+                                        <label class="tab_label" for="tab1"><b>new release</b></label>
+                                      
+                                        <input type="radio" name="tab" id="tab2" class="tab tab--2" />
+                                        <label class="tab_label" for="tab2"><b>coming soon</b></label>
+                                      
+                                        <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+                                        
+                                      
+                                        <div class="indicator"></div>
+                                      </div>
+                                      
+                                </div>
+                                <div class="row">
+                                <div id="flex2">
+                                <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23?$2400px$" alt="">
+                                  </div>
+                                  <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/rise-of-the-ronin-listing-thumb-en-28mar23?$1200px$" alt="">
+                                  </div>
+                                  <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/marvels-spider-man-2-thumbnail-02-en-01oct21?$1200px$" alt="">
+                                  </div>
+                                  <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/stellar-blade-ps5-20april23en?$1200px$" alt="">
+                                  </div>
+                                  <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-store-art-01-en-27sept23?$1200px$" alt="">
+                                  </div>
+                                  <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-shadow-of-the-erdtree-keyart-01-en-28feb24?$1200px$" alt="">
+                                  </div>
+                                  <div class="card2">
+                                    <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-store-art-01-en-4march24?$1200px$" alt="">
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  <div class="row">
+                                    <div id="flex2">
+                                    <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-listing-thumb-01-09sep21$en?$1200px$" alt="">
+                                      </div>
+                                      <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/The-last-of-us-part-ii-remastered-packshot-01-26feb24$en?$1200px$" alt="">
+                                      </div>
+                                      <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/final-fantasy-vii-rebirth-pack-01-en-30oct23?$1200px$" alt="">
+                                      </div>
+                                      <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/zenless-zone-zero-packshot-01-en-17may24?$1200px$" alt="">
+                                      </div>
+                                      <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/call-of-duty-modern-warfare-3-pack-01-en-22aug23?$1200px$" alt="">
+                                      </div>
+                                      <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/lego-fortnite-pack-01-en-01dec23?$1200px$" alt="">
+                                      </div>
+                                      <div class="card2">
+                                        <img width="185px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/black-myth-wukong-temp-pack-01-en-29apr24?$1200px$" alt="">
+                                      </div>
+                                      </div>
+                                      </div>
+                                    </section>
+                                    
+                                        <div class="ground1">
+                                            <img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2lcZTjs30Oluv-YwpF3V9hrT-j2P2KdfmLA&s" alt=""><h><b>PlayStation.Plus</b></h>
+                                        </div>
+                                        <div class="header">
+                                            <p>Discover PlayStation Plus</p>
+                                            </div>
+                                            <p class="h text-center">Play hundreds of incredible PS5, PS4 and classic PlayStation games, and discover epic adventures, unique indies, family favourites, and everything in between.</p>
+                                            <div id="mark">
+                                                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active">
+                                                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-premium-image-block-desktop-01-en-09Apr24?$4000px$" class="d-block w-100" alt="...">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                          <h5>First slide label</h5>
+                                                          <p>Some representative placeholder content for the first slide.</p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img width="100%" height="575px" src="https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-essential-image-block-desktop-01-28jun24$en-us?$4000px$" class="d-block w-100" alt="...">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                          <h5>Second slide label</h5>
+                                                          <p>Some representative placeholder content for the second slide.</p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img width="100%" height="575px" src="https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-extra-image-block-desktop-01-en-jun24?$4000px$" class="d-block w-100" alt="...">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                          <h5>Third slide label</h5>
+                                                          <p>Some representative placeholder content for the third slide.</p>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                            </div>
+                                            <section>
+                                                <div>
+                                                    <img width="100%" height="" src="https://gmedia.playstation.com/is/image/SIEPDC/psvr2-register-homepage-hero-desktop-01-en-14nov22?$4000px$" alt="">
+                                                </div>
+                                                <div class="white">
+                                                    <h5 class="feel">Feel a New Real</h5><br><br>
+                                                  
+                                                    <p class="el">EImmerse yourself in epic worlds that go beyond reality, with the groundbreaking <br> PlayStation VR2 headset and PlayStation VR2 Sense controller.</p>
+                                                    <button1 class="find"><b>find out more</b></button1>
+                                                        <button2  ><b>buy now</b></button2><br><br>
+                                                            <p class="find">Buy from $449,99</p>
+                                                    </div>
+                                            </section>
+                                            <section id="cart">
+                                                <div>
+                                                    <img width="100%" height="700px" src="https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-jul-homepage-background-desktop-01-en-24jun24?$2400px$" alt="">
+                                                </div>
+                                                <div class="july">THIS JULY <br>
+                                                    ON PLAYSTATION</div>
+                                                    <p class="p"><b>Check out this month's biggest releases along with dedicated features, guides and more</b>.</p>
+                                                  <div class="find1"><button1 class="out bg-light text-dark"><b>find out more</b></button1></div> 
+
+                                             </section>
+                                             
+                                             <section id="violet">
+                                             <div id="flex4">
+                                                <div class="card4">
+                                                    <img width="300px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/zenless-zone-zero-combat-screenshot-05-en-20march24?$800px--t$" alt="">
+                                                    
+                                                  </div>
+                                             
+                                             <div class="card4">
+                                                <img width="300px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/flintlock-the-siege-of-dawn-screenshot-01-en-26june24?$800px--t$" alt="">
+                                              </div>
+                                         
+                                         <div class="card4">
+                                            <img width="300px" height="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/xdefiant-keyart-01-en-11may23?$800px--t$" alt="">
+                                          </div>
+                                     </div>
+                                     <div class="find2 p-5"><button1 class="out bg-light text-dark "><b>find out more</b></button1></div> 
+                                            </section>
+                                            <!-- footer -->
+                                             
+                                          <!-- Footer -->
+<footer class="text-center text-lg-star text-muted" style="background-color: rgb(26, 113, 184);">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span></span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>play PlayStation®
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">ps5</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">ps4</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">pc</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">ps pluse</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+                                            
+                                 
+
+
+                            
+                                    
+                                              
+
+                                    
+                                    
+
+                            
+                
+
+
+
+    
+
+
+</body>
+</html>
